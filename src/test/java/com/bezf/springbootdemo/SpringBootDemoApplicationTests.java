@@ -22,7 +22,7 @@ class SpringBootDemoApplicationTests {
     private final static String DEV_EXPECTED = "Current profile is dev";
     private final static String PRODUCTION_EXPECTED = "Current profile is production";
     private final static String ENDPOINT = "/profile";
-    ;
+    
     @Container
     private final GenericContainer<?> firstApp = new GenericContainer<>("devappnew:latest")
             .withExposedPorts(FIRST_APP_PORT);
