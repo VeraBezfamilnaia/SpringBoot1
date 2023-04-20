@@ -16,8 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SpringBootDemoApplicationTests {
     @Autowired
     private TestRestTemplate restTemplate;
-    private static final int FIRST_APP_PORT = 8080;
-    private static final int SECOND_APP_PORT = 8081;
+    private final static int FIRST_APP_PORT = 8080;
+    private final static int SECOND_APP_PORT = 8081;
     private final static String START_URL = "http://localhost:";
     private final static String DEV_EXPECTED = "Current profile is dev";
     private final static String PRODUCTION_EXPECTED = "Current profile is production";
